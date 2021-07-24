@@ -1,28 +1,12 @@
 const express = require('express');
-const {ApolloServer,gql} = require('apollo-server-express');
-
-
-const typeDefs = gql`    
-    type Query {
-        foo: String
-    }
-`;
-
-// Resolver map
-const resolvers = {
-    Query: {
-        foo(){
-            return "Hello"
-        }
-    }
-};
+const {ApolloServer} = require('apollo-server-express');
+const schema = require('../schema');
 
 
 async function startApolloServer() {
     const app = express();
     const server = new ApolloServer({
-        typeDefs,
-        resolvers,
+        schema,
     });
     await server.start();
 

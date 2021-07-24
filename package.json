@@ -2,9 +2,10 @@
   "name": "graphqllearn",
   "version": "1.0.0",
   "description": "",
-  "main": "apollo_src/index.js",
+  "main": "src/index.js",
+  "type": "commonjs",
   "scripts": {
-    "start": "nodemon ./apollo_src/apollo_express.js",
+    "start": "nodemon src/apollo_express.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -17,5 +18,8 @@
     "graphql": "^15.5.1",
     "mongoose": "^5.13.2",
     "nodemon": "^2.0.12"
+  },
+  "devDependencies": {
+    "graphql-tools": "^7.0.5"
   }
 }
