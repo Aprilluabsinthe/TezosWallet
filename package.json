@@ -13,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "apollo-server-express": "^3.0.0",
+    "bigchaindb-driver": "^4.2.2",
     "express": "^4.17.1",
     "express-graphql": "^0.12.0",
     "graphql": "^15.5.1",
@@ -20,6 +21,8 @@
     "nodemon": "^2.0.12"
   },
   "devDependencies": {
-    "graphql-tools": "^7.0.5"
+    "graphql-tools": "^7.0.5",
+    "isemail": "^3.2.0",
+    "mongodb": "^3.6.8"
   }
 }
